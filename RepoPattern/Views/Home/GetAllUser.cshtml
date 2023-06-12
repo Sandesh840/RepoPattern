@@ -1,0 +1,9 @@
+﻿@model List<RepoPattern.Models.UserDetails>
+
+    @if(Model!=null){
+        @foreach(var item in Model)
+        {
+            <span>Name: @item.Name</span>
+            <span>Address: @item.Address</span>
+        }
+    }
